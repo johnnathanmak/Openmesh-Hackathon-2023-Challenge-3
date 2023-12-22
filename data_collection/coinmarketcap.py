@@ -31,9 +31,7 @@ data = data_json['data']
 for coin in data:
     name = coin['name']
     price = coin['quote']['USD']['price']
-    print(f"{name}: {price}")
-    kafka_producer.send('data', value = f"{name}: {price},")
-    # kafka_producer.send('data', value = f"{{\"{name}\": {price}}},")
+    kafka_producer.send('coinmarketcap', value = f"{name}: {price},")
     sleep(0.01)
 
 

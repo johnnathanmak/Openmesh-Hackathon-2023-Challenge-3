@@ -28,7 +28,7 @@ data_json = requests.get(url, params=params, headers=headers).json()
 for coin in data_json:
     name = coin['name']
     price = coin['current_price']
-    print(f"{name}: {price}")
-    kafka_producer.send('data', value = f"{name}: {price},")
+    # print(f"{name}: {price}")
+    kafka_producer.send('coingecko', value = f"{name}: {price},")
     sleep(0.01)
 
