@@ -1,0 +1,4 @@
+<topic name>:<number of partitions>:<replication factor>
+Main-topic:1:3
+another-topic:3:2
+third-topic:2:1
