@@ -22,7 +22,7 @@ kafka_consumer = KafkaConsumer(topic, bootstrap_servers = [host], auto_offset_re
 
 # Log current time
 now = str(datetime.datetime.now())
-f.write('Timestamp:' + now + ',\n')
+f.write('Timestamp:' + now + '\n')
 
 for message in kafka_consumer:
     #inserting the messages to the collection file
