@@ -1,4 +1,8 @@
 # Openmesh-Hackathon-2023-Challenge-3
+
+## See the pitch here
+https://youtu.be/A9K_FddYV4Y
+
 ## Dependencies
 To make sure this project runs on your local, please pip install kafka-python
 
